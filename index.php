@@ -76,10 +76,11 @@ ini_set("display_errors", 1);
 			<div class="page-header">
 				<h1>Documentation</h1>
 			</div>
-			<p>More documentation will be added in the future. Please refer to Nawar Halabi's <a href="MPHIL.pdf" alt="Download Nawar's 18-month report">18-month report</a> for more details. Please note that the apostrophe which follows some vowel phonemes in the corpus indicates that the vowel is in a stressed syllable.</p>
+			<p>More documentation will be added in the future. Please refer to Nawar Halabi's <a href="Nawar Halabi PhD Thesis Revised.pdf" alt="Download Nawar's PhD Thesis">PhD Thesis</a> for more details. Please note that the apostrophe which follows some vowel phonemes in the corpus indicates that the vowel is in a stressed syllable.</p>
 			<div class="page-header">
 				<h1>License</h1>
 			</div>
+			<p>It is important to note that the project was funded by MicroLinkPC, Southampton, an assistive technology provider in the UK. MircoLinkPC is the entity responsible for giving more permissive licenses after agreement. Please get in touch with Nawar Halabi or MicroLinkPC for commercial licensing.</p>
 			<p>
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
 					<img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
