@@ -72,6 +72,7 @@ ini_set("display_errors", 1);
 				<li>1813 .TextGrid files containing the phoneme labels with time stamps of the boundaries where these occur in the .wav files. These files can be opened using <a href="www.fon.hum.uva.nl/praat/" title="praat">Praat software</a>.</li>
 				<li>phonetic-transcript.txt which has the form "[wav_filename]" "[Phoneme Sequence]" in every line.</li>
 				<li>orthographic-transcript.txt which has the form "[wav_filename]" "[Orthographic Transcript]" in every line. Orthography is in <a href="http://www.qamus.org/transliteration.htm" title="buckwalter transliteration">Buckwalter Format</a> which is friendlier where there is software that does not read Arabic script. It can be easily converted back to Arabic.</li>
+				<li>There is an extra 18 minutes of fully annotated corpus (separate from above but with the same structure as above) which was used to evaluted the corpus (see PhD thesis). Feel free to use it in your applications.</li>
 			</ul>
 			<div class="page-header">
 				<h1>Documentation</h1>
