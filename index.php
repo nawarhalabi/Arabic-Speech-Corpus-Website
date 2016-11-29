@@ -77,7 +77,7 @@ ini_set("display_errors", 1);
 			<div class="page-header">
 				<h1>Documentation</h1>
 			</div>
-			<p>More documentation will be added in the future. Please refer to Nawar Halabi's <a href="Nawar Halabi PhD Thesis Revised.pdf" alt="Download Nawar's PhD Thesis">PhD Thesis</a> for more details. Please note that the apostrophe which follows some vowel phonemes in the corpus indicates that the vowel is in a stressed syllable.</p>
+			<p>More documentation will be added in the future. Please refer to Nawar Halabi's <a href="Nawar Halabi PhD Thesis Revised.pdf" alt="Download Nawar's PhD Thesis">PhD Thesis</a> for more details. Please note that the apostrophe which follows some vowel phonemes in the corpus indicates that the vowel is in a stressed syllable. Feel free to visit the <a href="https://en.wikipedia.org/wiki/Arabic_Speech_Corpus">Arabic Speech Corpus Wikipedia page</a> for more information about the corpus.</p>
 			<div class="page-header">
 				<h1>License</h1>
 			</div>
