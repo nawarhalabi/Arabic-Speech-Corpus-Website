@@ -14,8 +14,8 @@ ini_set("display_errors", 1);
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="The Arabic Speech Corpus or the Arabic Speech Database is an annotated speech corpus for high quality speech synthesis. The anotations are to the phoneme level and include stress marks.">
+		<meta name="author" content="Nawar Halabi">
 		<link rel="icon" href="img/favicon.ico">
 
 		<title>Arabic Speech Corpus</title>

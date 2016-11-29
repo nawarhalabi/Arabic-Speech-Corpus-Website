@@ -14,8 +14,8 @@ ini_set("display_errors", 1);
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="مجموع (قاعدة بيانات) النطق بالعربية هو قاعدة بيانات مرمرزة تستخدم من أجل توليد النطق أوتوماتيكياً بجودة عالية.">
+		<meta name="author" content="نوار حلبي">
 		<link rel="icon" href="img/favicon.ico">
 
 		<title>مجموع (قاعدة بيانات) النطق بالعربية</title>
