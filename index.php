@@ -49,7 +49,9 @@ ini_set("display_errors", 1);
 	<body>
 		<!-- Begin page content -->
 		<div class="container">
-			<img id="site-logo" src="img/logo.png" alt="logo" />
+			<a href="http://en.arabicspeechcorpus.com">
+				<img id="site-logo" src="img/logo.png" alt="logo" />
+			</a>
 			<div class="language-selector">
 				<a href="http://ar.arabicspeechcorpus.com/" title="مجموع (قاعدة بيانات) النطق بالعربية">Arabic</a>
 				|
@@ -61,7 +63,11 @@ ini_set("display_errors", 1);
 			<p>This Speech corpus has been developed as part of PhD work carried out by <a href="https://uk.linkedin.com/pub/nawar-halabi/65/532/67b" title="Nawar Halabi">Nawar Halabi</a> at the <a href="http://www.southampton.ac.uk/" title="University of Southampton">University of Southampton</a>. The corpus was recorded in south Levantine Arabic (Damascian accent) using a professional studio. Synthesized speech as an output using this corpus has produced a high quality, natural voice.</p>
 			<p>It is released here under the non-commercial creative commons license specified below. In case further rights are required, or you require consultancy for building Arabic speech corpora, please contact <a href="mailto:nawar.halabi@gmail.com" target="_top">Nawar Halabi</a> by email. Thank you for your interest.</p>
 			<p>
-				<a class="btn btn-success btn-lg center-block download-btn" gacode="whole-version-1" href="arabic-speech-corpus.zip" title="Download Package">Download Package</a>
+				<a class="btn btn-success btn-lg center-block download-btn" gacode="whole-version-1" href="arabic-speech-corpus.zip" title="Download Package">Download Corpus Package</a>
+			</p>
+			<p>Please feel free to try my Conditional Random Field based, high quality diacritiser for Arabic which can work on mobile phones.</p>
+			<p>
+				<a class="btn btn-info btn-lg center-block download-btn" gacode="whole-version-1" href="diacritiser.php" target="_blank" title="High Quality Diacritier Demo">High Quality Diacritiser Demo</a>
 			</p>
 			<div class="page-header">
 				<h1>The package includes</h1>
@@ -93,7 +99,7 @@ ini_set("display_errors", 1);
 
 		<footer class="footer">
 			<div class="container">
-				<p class="text-muted">© <?php echo date("Y"); ?> Nawar Halabi. All rights reserved.</p>
+				<p class="text-muted">&copy; <?php echo date("Y"); ?> Nawar Halabi. All rights reserved.</p>
 			</div>
 		</footer>
 	</body>

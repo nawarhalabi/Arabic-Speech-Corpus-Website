@@ -49,7 +49,9 @@ ini_set("display_errors", 1);
 	<body>
 		<!-- Begin page content -->
 		<div class="container">
-			<img id="site-logo" src="img/logo.png" alt="رمز الموقع" />
+			<a href="http://ar.arabicspeechcorpus.com">
+				<img id="site-logo" src="img/logo.png" alt="رمز الموقع" />
+			</a>
 			<div class="language-selector">
 				<a href="http://ar.arabicspeechcorpus.com/" title="مجموع (قاعدة بيانات) النطق بالعربية">Arabic</a>
 				|
@@ -66,6 +68,10 @@ ini_set("display_errors", 1);
 			</p>
 			<p>
 				<a class="btn btn-success btn-lg center-block download-btn" gacode="whole-version-1" href="arabic-speech-corpus.zip" title="تحميل القاعدة">تحميل قاعدة البيانات</a>
+			</p>
+			<p>بإمكانكم تجريب مشكل اللغة العربية خاصتي ذو الدقة العالية على الويب. المشكل يعمل على الأجهزة المحمولة أيضاً.</p>
+			<p>
+				<a class="btn btn-info btn-lg center-block download-btn" gacode="whole-version-1" href="diacritiser.php" target="_blank" title="مشكل الغة العربية">مشكل الغة العربية</a>
 			</p>
 			<div class="page-header">
 				<h1>محتويات قاعدة البيانات</h1>
@@ -97,7 +103,7 @@ ini_set("display_errors", 1);
 
 		<footer class="footer">
 			<div class="container">
-				<p class="text-muted">© <?php echo date("Y"); ?> نوار حلبي. كل الحقوق بما فيها حقوق النشر محفوظة.</p>
+				<p class="text-muted">&copy; <?php echo date("Y"); ?> نوار حلبي. كل الحقوق بما فيها حقوق النشر محفوظة.</p>
 			</div>
 		</footer>
 	</body>
