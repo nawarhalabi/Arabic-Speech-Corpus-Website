@@ -67,12 +67,12 @@ ini_set("display_errors", 1);
 			<p>يمكن استخدام المشكل على الأجهزة المحمولة.</p>
 			<p>الرجاء الاتصال بنوار حلبي للحصول على رخصة لاستخدام المشكل.</p>
 			<textarea dir="rtl" class="col-xs-12" name="text" rows="5" placeholder="الرجاء ادخال النص"></textarea>
-			<input class="btn btn-success" type="button" name="diacritise" value="Diacritise" />
+			<input class="btn btn-success" type="button" name="diacritise" value="تشكيل النص" />
 			<h2 id="result-header" class="hidden">النص المشكل</h2>
 			<p dir="rtl" id="diacritisation-result"></p>
 			
 			<h2 id="corrections-header">ساعدنا لتحسين المشكل!!!</h2>
-			<p>اذا وجدت أي أخطاء في النص المشكل أعلاه، يسرنا أن تقوم بتنقيح التشكيل و تصحيحه في خانة النص أدناه. بإمكانكم أيضاً ادخال نصوص جديدة مشكلة من مصادر اخرى ولا داعي لتشكيلها بالمشكل الاوتوماتيكي. شكراً جزيلاً. هذا يساعدنا على زيادة دقة المشكل.</p>
+			<p>اذا وجدت أي أخطاء في النص المشكل أعلاه، يسرنا أن تقوم بتنقيح التشكيل و تصحيحه في خانة النص أدناه. بإمكانكم أيضاً ادخال نصوص جديدة مشكلة من مصادر اخرى ولا داعي لتشكيلها بالمشكل الاوتوماتيكي.  هذا يساعدنا على زيادة دقة المشكل. شكراً جزيلاً.</p>
 			<textarea dir="rtl" class="col-xs-12" name="correction" rows="5" placeholder="الرجاء ادخال نص مشكل..."></textarea>
 			<div class="row">
 				<div class="col-xs-12">
