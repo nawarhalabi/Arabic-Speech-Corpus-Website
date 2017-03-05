@@ -42,3 +42,11 @@ body {
 	text-align: center;
 	margin-top: 15px;
 }
+
+textarea[name=correction] {
+    font-size: 26px;
+}
+
+#diacritisation-result {
+    font-size: 26px;
+}
