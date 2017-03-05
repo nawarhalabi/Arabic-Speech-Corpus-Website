@@ -1,5 +1,5 @@
 <?php
-if ( isset( $_POST['text'] ) && strlen( $_POST['text'] ) < 300 ) {
+if ( isset( $_POST['text'] ) && strlen( $_POST['text'] ) < 1000 ) {
 	file_put_contents( getcwd() . '/diacritiser/input', $_POST['text'] );
 	
 	$input = '"' . getcwd() . '/diacritiser/input"';
@@ -24,7 +24,7 @@ if ( isset( $_POST['text'] ) && strlen( $_POST['text'] ) < 300 ) {
 	}';
 } else {
 	echo '{
-		"text": "Input too long for this demo"
+		"text": "النص طويل جداً...Text too long for demo..."
 	}';
 }
 ?>

@@ -45,6 +45,8 @@ ini_set("display_errors", 1);
 		
 		<script src="js/analytics.js"></script>
 		<script src="js/diacritise.js"></script>
+		<script src="js/correct.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 
 	<body>
@@ -68,6 +70,17 @@ ini_set("display_errors", 1);
 			<input class="btn btn-success" type="button" name="diacritise" value="Diacritise" />
 			<h2 id="result-header" class="hidden">النص المشكل</h2>
 			<p dir="rtl" id="diacritisation-result"></p>
+			
+			<h2 id="corrections-header">ساعدنا لتحسين المشكل!!!</h2>
+			<p>اذا وجدت أي أخطاء في النص المشكل أعلاه، يسرنا أن تقوم بتنقيح التشكيل و تصحيحه في خانة النص أدناه. بإمكانكم أيضاً ادخال نصوص جديدة مشكلة من مصادر اخرى ولا داعي لتشكيلها بالمشكل الاوتوماتيكي. شكراً جزيلاً. هذا يساعدنا على زيادة دقة المشكل.</p>
+			<textarea dir="rtl" class="col-xs-12" name="correction" rows="5" placeholder="الرجاء ادخال نص مشكل..."></textarea>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="g-recaptcha" data-sitekey="6LdothcUAAAAANTLzAF30jJz_o51CxlPi0XRYW1q"></div>
+				</div>
+			</div>
+			<input class="btn btn-success" type="button" name="correct" value="اقتراح التنقيح" />
+			<p id="correction-result"><p>
 		</div>
 
 		<footer class="footer">

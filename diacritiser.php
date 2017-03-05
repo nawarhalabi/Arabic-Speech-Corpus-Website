@@ -45,6 +45,8 @@ ini_set("display_errors", 1);
 		
 		<script src="js/analytics.js"></script>
 		<script src="js/diacritise.js"></script>
+		<script src="js/correct.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 
 	<body>
@@ -53,14 +55,17 @@ ini_set("display_errors", 1);
 			<a href="http://en.arabicspeechcorpus.com">
 				<img id="site-logo" src="img/logo.png" alt="logo" />
 			</a>
+			
 			<div class="language-selector">
 				<a href="http://ar.arabicspeechcorpus.com/diacritiser.php" title="مشكل اللغة العربية">Arabic</a>
 				|
 				<a href="http://en.arabicspeechcorpus.com/diacritiser.php" title="Arabic Speech Corpus Diacritiser">English</a>
 			</div>
+			
 			<div class="page-header">
 				<h1>Arabic Speech Corpus Diacritiser</h1>
 			</div>
+			
 			<p>This diacritiser was trained on a dataset of millions of datapoints scraped from websites and from old books (Alshamila library). It uses Conditional Random Fields and achieves higher accuracy than all, bigger size, slower diacritisers out there.</p>
 			<p>It also can run on small devices (mobile phones).</p>
 			<p>Please contact Nawar Halabi to obtain a license for this diacritiser.</p>
@@ -68,6 +73,17 @@ ini_set("display_errors", 1);
 			<input class="btn btn-success" type="button" name="diacritise" value="Diacritise" />
 			<h2 id="result-header" class="hidden">Result</h2>
 			<p dir="rtl" id="diacritisation-result"></p>
+			
+			<h2 id="corrections-header">Help us imporve our diacritisation!!!</h2>
+			<p>If you found some errors in the automatically generated diacritisation, or you want to contribute some diacritised text, please feel free to correct/fill the text area below. This helps us improve performance, and later, we will publish the clean collected data.
+			<textarea dir="rtl" class="col-xs-12" name="correction" rows="5" placeholder="Please enter diacritised/corrected text..."></textarea>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="g-recaptcha" data-sitekey="6LdothcUAAAAANTLzAF30jJz_o51CxlPi0XRYW1q"></div>
+				</div>
+			</div>
+			<input class="btn btn-success" type="button" name="correct" value="Submit Diacritised Text" />
+			<p id="correction-result"><p>
 		</div>
 
 		<footer class="footer">
