@@ -71,7 +71,7 @@ ini_set("display_errors", 1);
 			<h2 id="result-header" class="hidden">النص المشكل</h2>
 			<p dir="rtl" id="diacritisation-result"></p>
 			
-			<h2 id="corrections-header">ساعدنا لتحسين المشكل!!!</h2>
+			<h2 id="corrections-header">ساعدنا على تحسين المشكل!!!</h2>
 			<p>اذا وجدت أي أخطاء في النص المشكل أعلاه، يسرنا أن تقوم بتنقيح التشكيل و تصحيحه في خانة النص أدناه. بإمكانكم أيضاً ادخال نصوص جديدة مشكلة من مصادر اخرى ولا داعي لتشكيلها بالمشكل الاوتوماتيكي.  هذا يساعدنا على زيادة دقة المشكل. شكراً جزيلاً.</p>
 			<textarea dir="rtl" class="col-xs-12" name="correction" rows="5" placeholder="الرجاء ادخال نص مشكل..."></textarea>
 			<div class="row">

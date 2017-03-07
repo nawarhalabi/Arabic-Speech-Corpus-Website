@@ -4,7 +4,7 @@ if ( isset( $_POST['text'] ) && strlen( $_POST['text'] ) < 1000 ) {
 	
 	$input = '"' . getcwd() . '/diacritiser/input"';
 	$output = '"' . getcwd() . '/diacritiser/output"';
-	$model = '"' . getcwd() . '/diacritiser/models/l9w5b1lt7wt3"';
+	$model = '"' . getcwd() . '/diacritiser/models/l9w5b1lt7wt3punc_clean"';
 	$preprocess = 'python3 "' . getcwd() . '/diacritiser/preprocess.py" 5 < ' . $input;
 	$diacritise = '"' . getcwd() . '/diacritiser/bin/crf_test" -m ' . $model;
 	$postprocess = 'python3 "' . getcwd() . '/diacritiser/postprocess.py"';
