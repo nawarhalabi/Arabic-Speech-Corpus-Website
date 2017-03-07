@@ -10,24 +10,24 @@ if ( isset( $_POST['text'] ) and strlen( $_POST['text'] ) > 5 and strlen( $_POST
 			file_put_contents( 'corrections/corrections.txt', $_POST['text'] . PHP_EOL , FILE_APPEND | LOCK_EX );
 			
 			echo '{
-				"response": "Text saved! Thank you very much.",
+				"response": "Text saved! Thank you very much. شكراً جزيلاً.",
 				"status": "success"
 			}';
 		} else {
 			echo '{
-				"response": "Incorrect captcha response.",
+				"response": "Incorrect captcha response. الرجاء التاكيد أنكم لستم روبوت.",
 				"status": "error"
 			}';
 		}
 	} else {
 		echo '{
-			"response": "Incorrect captcha response.",
+			"response": "Incorrect captcha response. الرجاء التاكيد أنكم لستم روبوت.",
 			"status": "error"
 		}';
 	}
 } else {
 	echo '{
-		"response": "Input too long or too short.",
+		"response": "Input too long or too short. الدخل طويل جداً أو قصير جداً.",
 		"status": "error"
 	}';
 }

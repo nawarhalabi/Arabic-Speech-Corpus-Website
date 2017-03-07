@@ -1,5 +1,5 @@
 <?php
-if ( isset( $_POST['text'] ) && strlen( $_POST['text'] ) < 1000 ) {
+if ( isset( $_POST['text'] ) && strlen( $_POST['text'] ) < 3000 ) {
 	file_put_contents( getcwd() . '/diacritiser/input', $_POST['text'] );
 	
 	$input = '"' . getcwd() . '/diacritiser/input"';
