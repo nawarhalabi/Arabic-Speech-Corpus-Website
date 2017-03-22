@@ -67,14 +67,14 @@ ini_set("display_errors", 1);
 			</div>
 			
 			<p>This diacritiser was trained on a dataset of millions of datapoints scraped from websites and from old books (Alshamila library). It uses Conditional Random Fields and achieves higher accuracy than all, bigger size, slower diacritisers out there.</p>
-			<p>It also can run on small devices (mobile phones).</p>
+			<p>It can also run on small devices (mobile phones).</p>
 			<p>Please contact Nawar Halabi to obtain a license for this diacritiser.</p>
 			<textarea dir="rtl" class="col-xs-12" name="text" rows="5" placeholder="Please enter text to diacritise..."></textarea>
 			<input class="btn btn-success" type="button" name="diacritise" value="Diacritise" />
 			<h2 id="result-header" class="hidden">Result</h2>
 			<p dir="rtl" id="diacritisation-result"></p>
 			
-			<h2 id="corrections-header">Help us imporve our diacritisation!!!</h2>
+			<h2 id="corrections-header">Help us improve our diacritisation!!!</h2>
 			<p>If you found some errors in the automatically generated diacritisation, or you want to contribute some diacritised text, please feel free to correct/fill the text area below. This helps us improve performance, and later, we will publish the clean collected data.
 			<textarea dir="rtl" class="col-xs-12" name="correction" rows="5" placeholder="Please enter diacritised/corrected text..."></textarea>
 			<div class="row">
