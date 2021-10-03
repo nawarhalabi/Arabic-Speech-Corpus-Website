@@ -64,7 +64,7 @@ ini_set("display_errors", 1);
 				تم بناء قاعدة البيانات هذه كجزء من اطروحة دكتوراة <a href="https://uk.linkedin.com/pub/nawar-halabi/65/532/67b" title="نوار حلبي">نوار حلبي</a> في <a href="http://www.southampton.ac.uk/" title="جامعة ساوثهامتون">جامعة ساوثهامتون</a>. تم تسجيل قاعدة البيانات هذه في استوديو احترافي بلهجة دمشقية. تم استخدام قاعدة البيانات هذه لتركيب كلام منطوق أوتوماتيكيا ذي جودة عالية.
 			</p>
 			<p>
-				تصدر قاعدة البيانات هذه تحت رخصة المشاع الإبداعي غير الربحية المحددة أدناه باللغة الإنكليزية. في حال أردتم استخدام القاعدة لأغراض ربحية، أو إن اردتم الحصول على خدمات استشارية لبناء قاعدة بيانات خاصة بكم، يرجى الإتصال <a href="mailto:nawar.halabi@gmail.com" target="_top">بنوار حلبي</a> بالبريد الاكتروني. شكراً جزيلاً لاهتمامكم.
+				تصدر قاعدة البيانات هذه تحت رخصة المشاع الإبداعي المحددة أدناه باللغة الإنكليزية. في حال أردتم الحصول على خدمات استشارية لبناء قاعدة بيانات خاصة بكم، يرجى الإتصال <a href="mailto:nawar.halabi@gmail.com" target="_top">بنوار حلبي</a> بالبريد الاكتروني. شكراً جزيلاً لاهتمامكم.
 			</p>
 			<p>
 				<a class="btn btn-success btn-lg center-block download-btn" gacode="whole-version-1" href="arabic-speech-corpus.zip" title="تحميل القاعدة">تحميل قاعدة البيانات</a>
@@ -89,16 +89,50 @@ ini_set("display_errors", 1);
 			</div>
 			<p>سوف يتم إضافة المزيد من الوثائق و الشرح في المستقبل. الرجاء الإطلاع على <a href="Nawar Halabi PhD Thesis Revised.pdf" alt="شهادة الدكتوراه الخاصة بنوار حلبي">شهادة الدكتوراة</a> الخاصة بنوار حلبي. ويجب التنويه هنا أن رمز الفاصلة العليا الذي يتبع بعض رموز الفونيمات الصوتية يدل على أن الفونيم الصوتي هذا جزء من مقطع لفظي مشدد أو ذو نبرة (stressed). بإمكانكم زيارة <a href="https://en.wikipedia.org/wiki/Arabic_Speech_Corpus">صفحة ويكيبيديا</a> الخاصة بقاعدة البيانات الصوتية العربية للمزيد من المعلومات.</p>
 			<div class="page-header">
+                                <h1>تجربة<h1>
+                        </div>
+                        <p><a href="https://github.com/nawarhalabi/festival-tts-arabic-voices-docker">https://github.com/nawarhalabi/festival-tts-arabic-voices-docker</a> في هذا المستودع يوجد دوكر كونتينير لتشغيل السيرفر بسهولة على أي نظام</p>
+                        <p>شكراً جزيلاً لطه زروقي و أحمد برقاوي و كريم حمينة و أسامة حمينة على العمل الرائع و استخدام الكوربس لتوليد النطق:</p>
+                        <ol><li><a href="https://github.com/linuxscout/festival-tts-arabic-voices">Festival for Arabic</a></li>
+                            <li><a href="https://github.com/linuxscout/mishkal">مشكل مشكال</a></li>
+                            <li><a href="https://github.com/Barqawiz/Shakkala">مشكل شكالة</a></li></ol>
+                        <p>شكراً لعلي حمدي فاضل و ابراهيم تفاحة و براءة الجوارنة و محمود الايوب لعملهم على المشكل "شكلّها" الذي يفترض ان يكون الأدق لحد علمي <a href="https://github.com/AliOsm/shakkelha">https://github.com/AliOsm/shakkelha"</a>. قمت بإعادة تدريب المودل على المزيد من المعطيات من كتب أطفال (حواي نصف مليون كلمة جديدة)</p>
+                        <textarea id="input-text" dir="rtl" class="col-xs-12" name="arabic-text" rows="5" placeholder="الرجاء إدخال النص"></textarea>
+                        <!--<div class="row">
+                                <div class="col-xs-12">
+                                        <div class="g-recaptcha" data-sitekey="6LfAiCQUAAAAAAkuQUSoRpD6L-g4bHTOftuhI0yA"></div>
+                                </div>
+                        </div>-->
+                        <input id="tts-btn-mishkal" class="btn btn-success" type="button" name="synthesise-mishkal" value="توليد النطق (تشكيل بالستخدام مشكال)" />
+                        <input id="tts-btn-shakkala" class="btn btn-success" type="button" name="synthesise-shakkala" value="ﺕﻮﻠﻳﺩ ﺎﻠﻨﻄﻗ (تشكيل باستخدام شكالة)" />
+                        <input id="tts-btn-shakkelha" class="btn btn-success" type="button" name="synthesise-shakkala" value="توليد النطق (ﺖﺸﻜﻴﻟ باﺴﺘﺧدام شكلها)" />
+                        <audio controls>
+                                <source id="source" src="" type="audio/wav">
+                                محرك البحث لا يدعم التطيبق.
+                        </audio>
+
+                        <div id='waiting-gif'></div>
+
+                        <div class="page-header">
 				<h1>الرخصة (شروط الاستخدام)</h1>
 			</div>
-			<p>يرجى الانتباه ان المشروع قد مول من قبل MicroLinkPC, Southampton، وبالتالي هم مخولون بإعطاء رخص تجارية. الرجاء الاتصال بنوار حلبي أو MicroLinkPC للحصول على رخصة تجارية.</p>
 			<p dir="ltr">
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-					<img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+				    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
 				</a>
 				<br />
-				Arabic Speech Corpus by <a href="/" title="Nawar Halabi" rel="cc:attributionURL">Nawar Halabi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a title="Arabic Speech Corpus" href="/" rel="dct:source">www.arabicspeechcorpus.com</a>.
+				Arabic Speech Corpus by <a href="/" title="Nawar Halabi" rel="cc:attributionURL">Nawar Halabi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> Attribution 4.0 International (CC BY 4.0) License</a>. Based on a work at <a title="Arabic Speech Corpus" href="/" rel="dct:source">www.arabicspeechcorpus.com</a>.
 			</p>
+                        <div class="page-header">
+                                <h1>Help us keep the corpus free</h1>
+                        </div>
+                        <p>تطوير واستضافة مجموعة المعطيات هذه يتطلب وقت وتمويل. إذا أردت المساعدة، بإمكانك التبرع عبر بي بال :)</p>
+                        <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="GRY6H726LX5HG" />
+                                <input type="image" src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
+
 		</div>
 
 		<footer class="footer">
@@ -106,5 +140,6 @@ ini_set("display_errors", 1);
 				<p class="text-muted">&copy; <?php echo date("Y"); ?> نوار حلبي. كل الحقوق بما فيها حقوق النشر محفوظة.</p>
 			</div>
 		</footer>
+                <script src="js/synthesise.js"></script>
 	</body>
 </html>

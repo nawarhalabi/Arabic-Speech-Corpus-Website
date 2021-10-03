@@ -61,7 +61,7 @@ ini_set("display_errors", 1);
 				<h1>Arabic Speech Corpus</h1>
 			</div>
 			<p>This Speech corpus has been developed as part of PhD work carried out by <a href="https://uk.linkedin.com/pub/nawar-halabi/65/532/67b" title="Nawar Halabi">Nawar Halabi</a> at the <a href="http://www.southampton.ac.uk/" title="University of Southampton">University of Southampton</a>. The corpus was recorded in south Levantine Arabic (Damascian accent) using a professional studio. Synthesized speech as an output using this corpus has produced a high quality, natural voice.</p>
-			<p>It is released here under the non-commercial creative commons license specified below. In case further rights are required, or you require consultancy for building Arabic speech corpora, please contact <a href="mailto:nawar.halabi@gmail.com" target="_top">Nawar Halabi</a> by email. Thank you for your interest.</p>
+			<p>It is released here under the creative commons license specified below. In case further rights are required, or you require consultancy for building Arabic speech corpora, please contact <a href="mailto:nawar.halabi@gmail.com" target="_top">Nawar Halabi</a> by email. Thank you for your interest.</p>
 			<p>
 				<a class="btn btn-success btn-lg center-block download-btn" gacode="whole-version-1" href="arabic-speech-corpus.zip" title="Download Package">Download Corpus Package</a>
 			</p>
@@ -84,17 +84,50 @@ ini_set("display_errors", 1);
 				<h1>Documentation</h1>
 			</div>
 			<p>More documentation will be added in the future. Please refer to Nawar Halabi's <a href="Nawar Halabi PhD Thesis Revised.pdf" alt="Download Nawar's PhD Thesis">PhD Thesis</a> for more details. Please note that the apostrophe which follows some vowel phonemes in the corpus indicates that the vowel is in a stressed syllable. Feel free to visit the <a href="https://en.wikipedia.org/wiki/Arabic_Speech_Corpus">Arabic Speech Corpus Wikipedia page</a> for more information about the corpus.</p>
-			<div class="page-header">
+			
+                        <div class="page-header">
+                                <h1>Demo<h1>
+                        </div>
+                        <p><a href="https://github.com/nawarhalabi/festival-tts-arabic-voices-docker">https://github.com/nawarhalabi/festival-tts-arabic-voices-docker</a> In this repo there is a Docker image for this TTS server which can run on most platforms easily</p>
+                        <p>Thank you very much to Taha Zerrouki, Ahmad Barqawi, Karim Hemina and Oussama Hemina for their work to produce this TTS:</p>
+                        <ol><li><a href="https://github.com/linuxscout/festival-tts-arabic-voices">Festival for Arabic</a></li>
+                            <li><a href="https://github.com/linuxscout/mishkal">Mishkal Diacritiser</a></li>
+                            <li><a href="https://github.com/Barqawiz/Shakkala">Shakkala Diacritiser</a></li></ol>
+                        <p>Thank you to Ali Hamdi, Ibrahim Tuffaha, Baraa' Al-Jawarneh and Mahmoud Al-Ayyoub for their work on Shakkelha which is the best diacritiser as far as I know. <a href="https://github.com/AliOsm/shakkelha">https://github.com/AliOsm/shakkelha</a></p>
+                        <textarea id="input-text" dir="rtl" class="col-xs-12" name="arabic-text" rows="5" placeholder="Please enter text"></textarea>
+                        <!--<div class="row">
+                                <div class="col-xs-12">
+                                        <div class="g-recaptcha" data-sitekey="6LfAiCQUAAAAAAkuQUSoRpD6L-g4bHTOftuhI0yA"></div>
+                                </div>
+                        </div>-->
+                        <input id="tts-btn-mishkal" class="btn btn-success" type="button" name="synthesise-mishkal" value="Synthesise (Mishkal as diacritiser)" />
+                        <input id="tts-btn-shakkala" class="btn btn-success" type="button" name="synthesise-shakkala" value="Synthesise (Shakkala as diacritiser)" />
+                        <input id="tts-btn-shakkelha" class="btn btn-success" type="button" name="synthesise-shakkelha" value="Synthesise (Shakkelha as diacritiser)" />
+                        <audio controls>
+                                <source id="source" src="" type="audio/wav">
+                                Browser does not support this
+                        </audio>
+
+                        <div id='waiting-gif'></div>
+
+
+                        <div class="page-header">
 				<h1>License</h1>
 			</div>
-			<p>It is important to note that the project was funded by MicroLinkPC, Southampton, an assistive technology provider in the UK. MircoLinkPC is the entity responsible for giving more permissive licenses after agreement. Please get in touch with Nawar Halabi or MicroLinkPC for commercial licensing.</p>
 			<p>
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-					<img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
-				</a>
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>.
 				<br />
-				Arabic Speech Corpus by <a href="/" title="Nawar Halabi" rel="cc:attributionURL">Nawar Halabi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a title="Arabic Speech Corpus" href="/" rel="dct:source">www.arabicspeechcorpus.com</a>.
+				Arabic Speech Corpus by <a href="/" title="Nawar Halabi" rel="cc:attributionURL">Nawar Halabi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International License</a>. Based on a work at <a title="Arabic Speech Corpus" href="/" rel="dct:source">www.arabicspeechcorpus.com</a>.
 			</p>
+                        <div class="page-header">
+                                <h1>Help us keep the corpus free</h1>
+                        </div>
+                        <p>Developing and hosting the corpus costs time and money. You are welcome to make a contribution if you think we deserve it :)</p>
+                        <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="GRY6H726LX5HG" />
+                                <input type="image" src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
 		</div>
 
 		<footer class="footer">
@@ -102,5 +135,6 @@ ini_set("display_errors", 1);
 				<p class="text-muted">&copy; <?php echo date("Y"); ?> Nawar Halabi. All rights reserved.</p>
 			</div>
 		</footer>
+                <script src="js/synthesise.js"></script>
 	</body>
 </html>
